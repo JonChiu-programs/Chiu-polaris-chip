@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="Description" content="Boilerplate for polaris chip">
+  <base href="/">
+
+  <style>
+    :root,
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      background-color: #ededed;
+    }
+    polaris-chip {
+      margin: 16px;
+    }
+    my-card{
+      --my-card-card-background-color: #eadb8fff;
+      --my-card-button-img-background-color: #eadb8fff;
+      --my-card-text-background-color: #eadb8fff;
+    }
+    my-card.teal{
+      --my-card-card-background-color: teal;
+      --my-card-button-img-background-color: teal;
+      --my-card-text-background-color: teal;
+    }
+    my-card.encroach{
+      --my-card-card-background-color: teal;
+      --my-card-button-img-background-color: teal;
+      --my-card-text-background-color: red;
+    }
+
+    my-card.surrounded{
+      --my-card-card-background-color: red;
+      --my-card-button-img-background-color: teal;
+      --my-card-text-background-color: red;
+    }
+    my-card.red{
+      --my-card-card-background-color: red;
+      --my-card-button-img-background-color: red;
+      --my-card-text-background-color: red;
+    }
+    
+  </style>
+  <title>polaris-chip / my-card</title>
+</head>
+
+<body>
+  <h1>polaris-chip</h1>
+  <!-- this is going to do whatever the tag's defaults are -->
+  <polaris-chip title="News of Record" link="https://psu.edu/"></polaris-chip>
+  <polaris-chip title="Faculty and Staff"></polaris-chip>
+  <polaris-chip title="Sports are the only thing that matter"></polaris-chip>
+  <polaris-chip title="Grants and donations"></polaris-chip>
+  
+  <h1>my-card</h1>
+  <my-card 
+    title = "Glyph Card"
+    image = "https://upload.wikimedia.org/wikipedia/commons/d/da/1-Light_glyph.png"
+    alt = "Light Glyph from The Owl House">
+    <blockquote>
+      <p class = "text"> 
+      This is a light glyph from <br> "The Owl House."<br> Click it to receive a present!
+      </p>
+    </blockquote></my-card>
+
+    <my-card 
+    title = "Glyph Card"
+    image = "https://upload.wikimedia.org/wikipedia/commons/d/da/1-Light_glyph.png"
+    alt = "Light Glyph from The Owl House"
+    class = "teal">
+    <blockquote>
+      <p class = "text"> 
+      This is the <br> light glyph, but teal.
+      </p>
+    </blockquote></my-card>
+
+    <my-card 
+    title = "Glyph Card"
+    image = "https://upload.wikimedia.org/wikipedia/commons/d/da/1-Light_glyph.png"
+    alt = "Light Glyph from The Owl House"
+    class = "encroach">
+    <blockquote>
+      <p class = "text"> 
+      RED! <br> 
+      How did that get here?!
+      </p>
+    </blockquote></my-card>
+
+    <my-card 
+    title = "Glyph Card"
+    image = "https://upload.wikimedia.org/wikipedia/commons/d/da/1-Light_glyph.png"
+    alt = "Light Glyph from The Owl House"
+    class = "surrounded">
+    <blockquote>
+      <p class = "text"> 
+      The red has surrounded the glyph!
+      </p>
+    </blockquote></my-card>
+
+    <my-card 
+    title = "Glyph Card"
+    image = "https://upload.wikimedia.org/wikipedia/commons/d/da/1-Light_glyph.png"
+    alt = "Light Glyph from The Owl House"
+    class = "red">
+    <blockquote>
+      <p class = "text"> 
+      The light glyph is <br> no longer teal, but red! MWHAHAHAH!
+      </p>
+    </blockquote></my-card>
+
+  <!-- this is what is bringing in the definition for this tag -->
+  <script type="module" src="./src/polaris-chip.js"></script>
+  <script type="module" src="./src/my-card.js"></script>
+</body>
+
+</html>
