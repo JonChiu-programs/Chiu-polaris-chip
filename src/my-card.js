@@ -16,7 +16,7 @@ export class MyCard extends LitElement {
   constructor() {
     super();
     this.title = "HAX is html";
-    this.image = "files/giphy.gif" //"https://upload.wikimedia.org/wikipedia/commons/d/da/1-Light_glyph.png";
+    this.image = "https://upload.wikimedia.org/wikipedia/commons/d/da/1-Light_glyph.png";
     this.alt = "Light Glyph from The Owl House";
     this.link = "https://hax.psu.edu";
     this.fancy = false;
