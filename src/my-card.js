@@ -1,4 +1,5 @@
 import { LitElement, html, css } from 'lit';
+import "@haxtheweb/meme-maker/meme-maker.js";
 
 /**
  * Now it's your turn. Here's what we need to try and do:
@@ -14,8 +15,8 @@ export class MyCard extends LitElement {
 
   constructor() {
     super();
-    this.title = "My card";
-    this.image = "https://upload.wikimedia.org/wikipedia/commons/d/da/1-Light_glyph.png";
+    this.title = "HAX is html";
+    this.image = "files/giphy.gif" //"https://upload.wikimedia.org/wikipedia/commons/d/da/1-Light_glyph.png";
     this.alt = "Light Glyph from The Owl House";
     this.link = "https://hax.psu.edu";
     this.fancy = false;
@@ -74,7 +75,7 @@ export class MyCard extends LitElement {
   font-family:times new roman;
 }
 
-button img{
+button meme-maker{
   background-color: var(--my-card-button-img-background-color, #eadb8fff);
     margin: 35px -35px;
     padding: 5px;
@@ -163,8 +164,14 @@ button img{
     
       <section class="button-section">
         <a href= "${this.link}">
-          <button class = "glyph"> 
-            <img class="inner-glyph" src= ${this.image} alt=${this.alt}> 
+          <button class = "glyph">
+            <!--<img class="inner-glyph" src= ${this.image} alt=${this.alt}> -->
+            <meme-maker 
+            alt="Up your meme game with hax and allow for more accessible memes"
+            image-url= ${this.image}
+            top-text= ${this.title}
+            bottom-text="HTML is anything">
+      </meme-maker> 
             <br>
           </button>
         </a>
